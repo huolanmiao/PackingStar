@@ -58,6 +58,6 @@ $$G \succeq 0$$
 
 4.  **Rank Constraint:**    
 
-$$ For \; N \le D: \; \text{rank}(G) = N $$
+$$ For \ N \le D: \ \text{rank}(G) = N $$
 
-$$ For \; N > D: \; \text{rank}(G) = D $$
+$$ For \ N > D: \ \text{rank}(G) = D $$
