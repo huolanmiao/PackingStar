@@ -23,18 +23,18 @@ Let $x_1, x_2, \dots, x_N \in \mathbb{R}^D$ be the position vectors of the cente
 
 1.  **Tangent with Central Sphere:** All centers must lie on the unit sphere.
 
-    $$x_i^T x_i = 1 \quad \forall i \in \{1, \dots, N\}$$
+$$x_i^T x_i = 1 \quad \forall i \in \{1, \dots, N\}$$
 
 2.  **Non-overlapping Condition:** The distance between any pair of surrounding spheres must be at least twice the radius (i.e., $\ge 1$).
 
-    $$(x_i - x_j)^T (x_i - x_j) \ge 1 \quad \forall i, j : i \neq j$$
+$$(x_i - x_j)^T (x_i - x_j) \ge 1 \quad \forall i, j : i \neq j$$
 
 These two requirements can be combined into a single existential logical statement:
 
 $$\exists x \ \{ \forall _ n \{ x_n^T x_n = 1 \} \land \forall _ {m, n : m \neq n} \{ (x_n - x_m)^T (x_n - x_m) \ge 1 \} \}$$
 
 ### 2. Gram Matrix Formulation
-*Formulation used in our PackingStar Paper ([PackingStar paper]([KissingNumber-Wikipedia](https://en.wikipedia.org/wiki/Kissing_number#Mathematical_statement)))*
+*Formulation used in our PackingStar Paper ([PackingStar paper](https://arxiv.org/abs/2511.13391v1))*
 
 In our Gram matrix formulation, the problem is equivalent to determine the maximal size $N$ of a Gram matrix $G \in \mathbb{R}^{N \times N}$ that satisfies certain constraints in $D$-dimensional space. 
 
@@ -42,23 +42,23 @@ Let $G$ be the Gram matrix of the sphere center vectors $x_1, x_2, \dots, x_N \i
 
 1.  **Unit Vectors:** The diagonal entries must be 1.
 
-    $$G_{ii} = 1 \quad \forall i$$
+$$G_{ii} = 1 \quad \forall i$$
 
 2.  **Geometric Constraint (Kissing Condition):** The off-diagonal entries (pairwise cosines) must not exceed $1/2$ (corresponding to the $60^\circ$ separation).
 
-    $$G_{ij} \le 1/2 \quad \forall i \neq j$$
+$$G_{ij} \le 1/2 \quad \forall i \neq j$$
 
     *(Note: In specific settings of our PackingStar approach, entries may be drawn from a discrete "cosine set" $C$ derived from geometric simulations. Here we show the basic constraints required by the kissing number problem).*
 
 3.  **Positive Semidefinite:** The matrix must be a valid inner product matrix.
 
-    $$G \succeq 0$$
+$$G \succeq 0$$
 
 4.  **Rank Constraint:** 
     For $N \le D$:   
 
-    $$\text{rank}(G) = N $$
+$$\text{rank}(G) = N $$
 
     For $N > D$:  
-    
-    $$\text{rank}(G) = D $$
+
+$$\text{rank}(G) = D $$
