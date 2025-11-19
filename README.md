@@ -46,19 +46,18 @@ $$G_{ii} = 1 \quad \forall i$$
 
 2.  **Geometric Constraint (Kissing Condition):** The off-diagonal entries (pairwise cosines) must not exceed $1/2$ (corresponding to the $60^\circ$ separation).
 
+    *(Note: In specific settings of our PackingStar approach, entries may be drawn from a discrete "cosine set" $C$ derived from geometric simulations. Here we show the basic constraints required by the kissing number problem).*
+
 $$G_{ij} \le 1/2 \quad \forall i \neq j$$
 
-    *(Note: In specific settings of our PackingStar approach, entries may be drawn from a discrete "cosine set" $C$ derived from geometric simulations. Here we show the basic constraints required by the kissing number problem).*
+
 
 3.  **Positive Semidefinite:** The matrix must be a valid inner product matrix.
 
 $$G \succeq 0$$
 
-4.  **Rank Constraint:** 
-    For $N \le D$:   
+4.  **Rank Constraint:**    
 
-$$\text{rank}(G) = N $$
+$$ For \; N \le D: \; \text{rank}(G) = N $$
 
-    For $N > D$:  
-
-$$\text{rank}(G) = D $$
+$$ For \; N > D: \; \text{rank}(G) = D $$
