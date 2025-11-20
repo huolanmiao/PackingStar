@@ -54,8 +54,8 @@ Our results fall into three categories: (i) new lower bounds in dimensions 25–
 ├── verify_coordinates.py
 └── verify_cosmatrix.py     
 ```
-- `verify_coordinates.py`: Script to verify new lower bound configurations using coordinate representation.
-- `verify_cosmatrix.py`: Script to verify rational and diverse configurations using Gram matrix representation.
+- `verify_coordinates.py`: Script to verify configurations represented by coordinates.
+- `verify_cosmatrix.py`: Script to verify configurations represented by Gram matrix.
 - `12D_14D_15D/`: Contains diverse configurations in 12, 14, and 15 dimensions.
 - `13D_rational_configurations/`: Contains improved rational configurations in 13 dimensions.
 - `25D-31D/`: Contains new lower bound configurations for dimensions 25 to 31, along with partitioned kissing configurations and $S_i$ configurations.
@@ -64,9 +64,12 @@ Our results fall into three categories: (i) new lower bounds in dimensions 25–
 PackingStar embeds 12 (optimal) disjoint unit-radius equilateral triangles into the 5-dimensional kissing configuration to generate a $26$-fold weighted $S_i$, exceeding the prior $24$-fold weighted $S_i$.
 
 ## How to verify our results
+
+### Install dependency
 ```
 pip install numpy
 ```
+
 ### Verifying New Lower Bounds in Dimensions 25-31
 New lower bound configurations for dimensions 25 to 31 are stored in the `./25D-31D` directory.
 
